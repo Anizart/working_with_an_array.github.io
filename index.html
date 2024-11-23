@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление товарами</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+    <h1 class="page__title">Управление товарами</h1>
+
+    <form class="form form--add" id="addProductForm">
+        <h2 class="form__title">Добавить товар</h2>
+        <input type="text" class="form__input" id="productName" placeholder="Название товара" required>
+        <input type="number" class="form__input" id="productPrice" placeholder="Цена товара" required>
+        <input type="text" class="form__input" id="productDescription" placeholder="Описание товара" required>
+        <button type="submit" class="form__button" data-btn1>Добавить товар</button>
+    </form>
+
+    <form class="form form--delete" id="deleteProductForm">
+        <h2 class="form__title">Удалить товар</h2>
+        <input type="number" class="form__input" id="deleteProductId" placeholder="ID товара" required>
+        <button type="submit" class="form__button" data-btn2>Удалить товар</button>
+    </form>
+
+    <form class="form form--update" id="updateProductForm">
+        <h2 class="form__title">Обновить товар</h2>
+        <input type="number" class="form__input" id="updateProductId" placeholder="ID товара" required>
+        <input type="text" class="form__input" id="updateProductName" placeholder="Новое название">
+        <input type="number" class="form__input" id="updateProductPrice" placeholder="Новая цена">
+        <input type="text" class="form__input" id="updateProductDescription" placeholder="Новое описание товара" required>
+        <button type="submit" class="form__button" data-btn3>Обновить товар</button>
+    </form>
+
+    <form class="form form--find" id="findProductForm">
+        <h2 class="form__title">Найти товар по названию</h2>
+        <input type="text" class="form__input" id="findProductName" placeholder="Название товара" required>
+        <button type="submit" class="form__button" data-btn4>Найти товар</button>
+    </form>
+
+    <form class="form form--filter-price" id="filterByPriceForm">
+        <h2 class="form__title">Отфильтровать товары по цене</h2>
+        <input type="number" class="form__input" id="filterMinPrice" placeholder="Минимальная цена">
+        <input type="number" class="form__input" id="filterMaxPrice" placeholder="Максимальная цена">
+        <button type="submit" class="form__button" data-btn5>Фильтровать товары</button>
+    </form>
+
+    <form class="form form--sort-price" id="sortByPriceForm">
+        <h2 class="form__title">Отсортировать товары по цене</h2>
+        <button type="submit" class="form__button" data-btn6>Сортировать товары</button>
+    </form>
+
+    <form class="form form--calculate-total-price" id="calculateTotalPriceForm">
+        <h2 class="form__title">Найти общую стоимость товаров</h2>
+        <button type="submit" class="form__button" data-btn7>Посчитать общую стоимость</button>
+    </form>
+
+    <form class='form form--search' id='searchProductsForm'>
+        <h2 class='form__title'>Найти товары по ключевому слову</h2>
+        <input type='text' class='form__input' id='searchKeyword' placeholder='Ключевое слово'>
+        <button type="submit" class="form__button" data-btn8>Искать товары</button>
+    </form>
+
+    <div class='product-list' id='productList' style="display: flex; flex-direction: column; gap: 25px"></div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

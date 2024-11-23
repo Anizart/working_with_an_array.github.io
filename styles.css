@@ -1,0 +1,64 @@
+/* styles.css */
+
+.page {
+    background-color: #121212; /* Темный фон */
+    color: #e0e0e0; /* Светлый текст */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.page__title {
+    color: #ffffff; /* Белый цвет заголовка */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #1e1e1e; /* Темный фон для форм */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form__title {
+    color: #ffffff; /* Белый цвет заголовка формы */
+}
+
+.form__input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: #333333; /* Темный фон для полей ввода */
+    color: #ffffff; /* Светлый текст в полях ввода */
+}
+
+.form__button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea; /* Цвет кнопок */
+    color: #ffffff; /* Светлый текст на кнопках */
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #3700b3; /* Цвет кнопок при наведении */
+}
+
+.product-list {
+    background-color: #1e1e1e; /* Темный фон для списка товаров */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-list__item {
+    border-bottom: 1px solid #444444; /* Разделитель между товарами */
+    padding: 5px 0;
+}
+
+.product-list__item:last-child {
+    border-bottom: none; /* Убираем разделитель у последнего товара */
+}
